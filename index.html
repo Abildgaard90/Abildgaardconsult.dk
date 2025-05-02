@@ -1,59 +1,107 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min Konsulentvirksomhed</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abildgaard Consult</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-image: url('https://source.unsplash.com/1600x500/?marketing,business');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #005f73;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section h2 {
+      color: #005f73;
+    }
+    .cta {
+      text-align: center;
+      margin: 50px 0;
+    }
+    .cta a {
+      background-color: #0a9396;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #001219;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#om">Om</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </nav>
-        <h1>Velkommen til Min Konsulentvirksomhed</h1>
-        <p>Vi hjælper virksomheder med at vokse gennem effektiv markedsføring.</p>
-    </header>
+  <header>
+    <h1>Abildgaard Consult</h1>
+    <p>Strategisk rådgivning & digital markedsføring</p>
+  </header>
 
-    <section id="om">
-        <h2>Om Os</h2>
-        <p>Med mange års erfaring inden for digital markedsføring tilbyder vi skræddersyede løsninger til vores kunder.</p>
-    </section>
+  <nav>
+    <a href="#om">Om mig</a>
+    <a href="#ydelser">Ydelser</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
 
-    <section id="services">
-        <h2>Vores Services</h2>
-        <ul>
-            <li>Marketingstrategi</li>
-            <li>SEO-optimering</li>
-            <li>Sociale Medier</li>
-            <li>Indholdsmarkedsføring</li>
-        </ul>
-    </section>
+  <section id="om">
+    <h2>Om mig</h2>
+    <p>Mit navn er Abildgaard, og jeg hjælper virksomheder med at opnå vækst gennem målrettet markedsføring og strategisk rådgivning. Med flere års erfaring inden for digital kommunikation skaber jeg løsninger, der virker.</p>
+  </section>
 
-    <section id="kontakt">
-        <h2>Kontakt Os</h2>
-        <form>
-            <label for="navn">Navn:</label>
-            <input type="text" id="navn" name="navn" required>
+  <section id="ydelser">
+    <h2>Ydelser</h2>
+    <ul>
+      <li>Markedsføringsstrategi og branding</li>
+      <li>Sociale medier og kampagnestyring</li>
+      <li>Webdesign og indholdsoptimering</li>
+    </ul>
+  </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+  <div class="cta">
+    <a href="#kontakt">Kontakt mig i dag</a>
+  </div>
 
-            <label for="besked">Besked:</label>
-            <textarea id="besked" name="besked" required></textarea>
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Send en mail til <strong>kontakt@abildgaardconsult.dk</strong> eller udfyld kontaktformularen her (kommer snart!).</p>
+  </section>
 
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Min Konsulentvirksomhed. Alle rettigheder forbeholdes.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Abildgaard Consult. Alle rettigheder forbeholdes.</p>
+  </footer>
 </body>
 </html>
